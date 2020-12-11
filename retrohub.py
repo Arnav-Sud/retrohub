@@ -7,3 +7,5 @@ while True:
 	h=raw_input("root@retrohub> ")
 	if h=="dosbox":
 		call("./dosbox.sh")
+	if h=="dosconf":
+		call("./dosboxconf.sh")
