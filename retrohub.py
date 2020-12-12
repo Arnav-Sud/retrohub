@@ -1,7 +1,7 @@
 #! /usr/bin/python
 
 from subprocess import call
-import time
+from os import system
 
 while True:
 	h=raw_input("root@retrohub> ")
@@ -13,3 +13,7 @@ while True:
 		call("./installstuff.sh")
 	if h=="exit":
 		quit()
+	if h=="clear":
+		system('clear')
+	else:
+		print("command not recognized")

@@ -10,7 +10,7 @@ function advancedMenu() {
             whiptail --title "Option 1" --msgbox "Dosbox installed!" 8 45
         ;;
         2)
-            
+            sudo apt-get install retroarch
             whiptail --title "Option 2" --msgbox "RetroArch installed!" 8 45
         ;;
     esac
