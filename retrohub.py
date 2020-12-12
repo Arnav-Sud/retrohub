@@ -9,7 +9,7 @@ while True:
 		call("./dosbox.sh")
 	if h=="dosconf":
 		call("./dosboxconf.sh")
-	if h=="install-dosbox":
-		call("./dosinstall.sh")
+	if h=="install-services":
+		call("./installstuff.sh")
 	if h=="exit":
 		quit()
