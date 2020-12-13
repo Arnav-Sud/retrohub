@@ -11,9 +11,9 @@ while True:
 		call("./dosboxconf.sh")
 	if h=="install-services":
 		call("./installstuff.sh")
+	if h=="dsconf":
+		call("./desmumeconf.sh")
 	if h=="exit":
 		quit()
 	if h=="clear":
 		system('clear')
-	else:
-		print("command not recognized")
