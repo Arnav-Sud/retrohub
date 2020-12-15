@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function advancedMenu() {
-    ADVSEL=$(whiptail --title "RetroArch Menu" --fb --menu "Choose an option" 15 60 4 \
+    ADVSEL=$(whiptail --title "DesMuME Menu" --fb --menu "Choose an option" 15 60 4 \
         "1" "Remove DeSmuME" \
         "2" "Configure DeSmuME" 3>&1 1>&2 2>&3)
     case $ADVSEL in

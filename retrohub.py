@@ -2,9 +2,12 @@
 
 from subprocess import call
 from os import system
+import colorama
+from colorama import init,Fore
+init()
 
 while True:
-	h=raw_input("root@retrohub> ")
+	h=raw_input(FORE.RED + "root@retrohub> ")
 	if h=="dosbox":
 		call("./dosbox.sh")
 	if h=="dosconf":
@@ -13,6 +16,8 @@ while True:
 		call("./installstuff.sh")
 	if h=="dsconf":
 		call("./desmumeconf.sh")
+	if h=="desmume":
+		call("./desmume.sh")
 	if h=="exit":
 		quit()
 	if h=="clear":
