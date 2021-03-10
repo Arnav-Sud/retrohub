@@ -10,15 +10,17 @@ while True:
 	h=input("root@retrohub> ")
 	if h=="dosbox":
 		call("./dosbox.sh")
-	if h=="dosconf":
+	elif h=="dosconf":
 		call("./dosboxconf.sh")
-	if h=="install-services":
+	elif h=="install-services":
 		call("./installstuff.sh")
-	if h=="dsconf":
+	elif h=="dsconf":
 		call("./desmumeconf.sh")
-	if h=="desmume":
+	elif h=="desmume":
 		call("./desmume.sh")
-	if h=="exit":
+	elif h=="exit":
 		quit()
-	if h=="clear":
+	elif h=="clear":
 		system('clear')
+	else:
+		print("command not valid " + h)
