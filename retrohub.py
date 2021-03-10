@@ -2,12 +2,12 @@
 
 from subprocess import call
 from os import system
-import colorama
-from colorama import init,Fore
-init()
+#import colorama
+#from colorama import init,Fore
+#init()
 
 while True:
-	h=raw_input(FORE.RED + "root@retrohub> ")
+	h=input("root@retrohub> ")
 	if h=="dosbox":
 		call("./dosbox.sh")
 	if h=="dosconf":
